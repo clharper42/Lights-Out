@@ -1,0 +1,58 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    overflow: hidden;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.outercont {
+    height: 100vh;
+    /* background-color: cornflowerblue; */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boardcont {
+    height: 75vh;
+    width: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 0px 0px;
+    grid-template-areas:
+      ". . . . ."
+      ". . . . ."
+      ". . . . ."
+      ". . . . ."
+      ". . . . .";
+    padding: 10px;
+  }
+
+  button {
+      background-color:lightgray;
+  }
+
+  button:focus {
+      outline:0;
+  }
+
+  .information {
+    grid-column: 1 / span 5;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .information h1 {
+      text-align: center;
+      color: white;
+      -webkit-text-stroke: .25px black;
+  }
