@@ -1,3 +1,3 @@
 # Lights-Out
 My simple take of the game Lights Out
-![Lights Out](https://ibb.co/wrm6cZ3)
+![Lights Out](https://i.ibb.co/S7CvfDW/Capture.png)
